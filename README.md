@@ -9,3 +9,7 @@ Built a comprehensive sales dashboard leveraging advanced Excel capabilities to 
   - User-Friendly Design: Incorporated slicers and filters to allow customizable views and drill-down analysis.
   - Documentation: Delivered clear notes and a structured data model for ongoing use and updates.
 This project streamlined reporting, enhanced decision-making, and provided a powerful tool to guide strategic planning and optimize business performance.
+
+## Interactive Excel Dashboard
+You can explore the interactive sales dashboard [here](./data/sales_dashboard.xlsx).
+
