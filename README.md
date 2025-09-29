@@ -12,4 +12,5 @@ This project streamlined reporting, enhanced decision-making, and provided a pow
 
 ## Interactive Excel Dashboard
 You can explore the interactive sales dashboard [here](coffeeOrdersDashboard.xlsx).
+![Image 9-28-25 at 7 42 PM](https://github.com/user-attachments/assets/4a2ed62c-bca7-46dc-a7af-f80c05d280f4)
 
