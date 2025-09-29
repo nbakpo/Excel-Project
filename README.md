@@ -11,5 +11,5 @@ Built a comprehensive sales dashboard leveraging advanced Excel capabilities to 
 This project streamlined reporting, enhanced decision-making, and provided a powerful tool to guide strategic planning and optimize business performance.
 
 ## Interactive Excel Dashboard
-You can explore the interactive sales dashboard [here](./data/sales_dashboard.xlsx).
+You can explore the interactive sales dashboard [here](coffeeOrdersDashboard.xlsx).
 
