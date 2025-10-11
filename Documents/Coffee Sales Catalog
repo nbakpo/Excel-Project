@@ -1,9 +1,9 @@
-Overview
-========
-The Coffee Sales Catalog is a business-level data model designed for analytics and reporting. 
+# Coffee Sales Catalog
+
+The Coffee Sales Catalog is a business-level data model designed for analytics and reporting.
 It includes dimension and fact tables that capture key business metrics and support data-driven decision-making.
 
-## Table: `customers`
+## Table: customers
 Purpose: Stores customer personal and contact information.
 
 | Column Name     | Data Type      | Description |
@@ -18,7 +18,7 @@ Purpose: Stores customer personal and contact information.
 | Postcode        | NVARCHAR(10)   | Postal or ZIP code associated with the customer’s address. |
 | Loyalty Card    | BIT            | Indicates if the customer has a loyalty card (1 = Yes, 0 = No). |
 
-## Table: `products`
+## Table: products
 Purpose: Provides information about the coffee products and their pricing details.
 
 | Column Name     | Data Type      | Description |
@@ -31,7 +31,7 @@ Purpose: Provides information about the coffee products and their pricing detail
 | Price per 100g  | DECIMAL(10,2)  | Normalized price per 100 grams for comparison. |
 | Profit          | DECIMAL(10,2)  | Profit earned per unit sold. |
 
-## Table: `gold`
+## Table: gold
 Purpose: Stores transactional data linking customers and products for analytical purposes.
 
 | Column Name        | Data Type      | Description |
