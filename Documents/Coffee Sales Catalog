@@ -1,10 +1,10 @@
 Overview
-============================================================================================================
+========
 The Coffee Sales Catalog is a business-level data model designed for analytics and reporting. 
 It includes dimension and fact tables that capture key business metrics and support data-driven decision-making.
 
 ## Table: `customers`
-**Purpose:** Stores customer personal and contact information.
+Purpose: Stores customer personal and contact information.
 
 | Column Name     | Data Type      | Description |
 |-----------------|----------------|-------------|
@@ -18,10 +18,8 @@ It includes dimension and fact tables that capture key business metrics and supp
 | Postcode        | NVARCHAR(10)   | Postal or ZIP code associated with the customer’s address. |
 | Loyalty Card    | BIT            | Indicates if the customer has a loyalty card (1 = Yes, 0 = No). |
 
----
-
 ## Table: `products`
-**Purpose:** Provides information about the coffee products and their pricing details.
+Purpose: Provides information about the coffee products and their pricing details.
 
 | Column Name     | Data Type      | Description |
 |-----------------|----------------|-------------|
@@ -33,10 +31,8 @@ It includes dimension and fact tables that capture key business metrics and supp
 | Price per 100g  | DECIMAL(10,2)  | Normalized price per 100 grams for comparison. |
 | Profit          | DECIMAL(10,2)  | Profit earned per unit sold. |
 
----
-
 ## Table: `gold`
-**Purpose:** Stores transactional data linking customers and products for analytical purposes.
+Purpose: Stores transactional data linking customers and products for analytical purposes.
 
 | Column Name        | Data Type      | Description |
 |--------------------|----------------|-------------|
@@ -54,6 +50,3 @@ It includes dimension and fact tables that capture key business metrics and supp
 | Coffee Type Name   | NVARCHAR(50)   | Display name for the coffee type. |
 | Roast Type Name    | NVARCHAR(50)   | Display name for the roast type. |
 | Loyalty Card       | BIT            | Indicates whether the purchase was made by a loyalty card holder. |
-
----
-
