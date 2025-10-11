@@ -1,7 +1,6 @@
 # Coffee Sales Catalog
 
-The Coffee Sales Catalog is a business-level data model designed for analytics and reporting.
-It includes dimension and fact tables that capture key business metrics and support data-driven decision-making.
+The Coffee Sales Catalog is a business-level data model for analytics and reporting.
 
 ## Table: customers
 Purpose: Stores customer personal and contact information.
@@ -10,29 +9,29 @@ Purpose: Stores customer personal and contact information.
 |-----------------|----------------|-------------|
 | Customer ID     | INT            | Key uniquely identifying each customer record in the dimension table. |
 | Customer Name   | NVARCHAR(100)  | Full name of the customer. |
-| Email           | NVARCHAR(50)   | Customer’s email address used for communication and identification. |
+| Email           | NVARCHAR(50)   | Customer’s email address. |
 | Phone Number    | NVARCHAR(20)   | Customer’s contact phone number. |
 | Address Line 1  | NVARCHAR(100)  | Primary address line of the customer’s residence. |
 | City            | NVARCHAR(50)   | City where the customer resides. |
 | Country         | NVARCHAR(50)   | Country of residence of the customer. |
-| Postcode        | NVARCHAR(10)   | Postal or ZIP code associated with the customer’s address. |
+| Postcode        | NVARCHAR(10)   | Postal or ZIP code of the customer. |
 | Loyalty Card    | BIT            | Indicates if the customer has a loyalty card (1 = Yes, 0 = No). |
 
 ## Table: products
-Purpose: Provides information about the coffee products and their pricing details.
+Purpose: Provides information about the coffee products and their pricing.
 
 | Column Name     | Data Type      | Description |
 |-----------------|----------------|-------------|
-| Product ID      | INT            | Key uniquely identifying each product record in the dimension table. |
+| Product ID      | INT            | Key uniquely identifying each product record. |
 | Coffee Type     | NVARCHAR(50)   | Type or blend of coffee (e.g., Arabica, Robusta). |
 | Roast Type      | NVARCHAR(50)   | Roast level of the coffee (e.g., Light, Medium, Dark). |
 | Size            | NVARCHAR(20)   | Package or serving size (e.g., 250g, 500g). |
 | Unit Price      | DECIMAL(10,2)  | Price per individual product unit. |
-| Price per 100g  | DECIMAL(10,2)  | Normalized price per 100 grams for comparison. |
+| Price per 100g  | DECIMAL(10,2)  | Normalized price per 100 grams. |
 | Profit          | DECIMAL(10,2)  | Profit earned per unit sold. |
 
 ## Table: gold
-Purpose: Stores transactional data linking customers and products for analytical purposes.
+Purpose: Stores transactional data linking customers and products.
 
 | Column Name        | Data Type      | Description |
 |--------------------|----------------|-------------|
@@ -40,13 +39,13 @@ Purpose: Stores transactional data linking customers and products for analytical
 | Order Date         | DATE           | Date when the order was placed. |
 | Customer ID        | INT            | References the customer who placed the order. |
 | Product ID         | INT            | References the product purchased in the order. |
-| Quantity           | INT            | Quantity of products sold in the transaction. |
-| Customer Name      | NVARCHAR(100)  | Customer’s name at the time of order (denormalized for reporting). |
-| Email              | NVARCHAR(50)   | Customer’s email address (denormalized for reporting). |
+| Quantity           | INT            | Quantity of products sold. |
+| Customer Name      | NVARCHAR(100)  | Customer’s name at the time of order. |
+| Email              | NVARCHAR(50)   | Customer’s email at the time of order. |
 | Country            | NVARCHAR(50)   | Country of the customer at the time of order. |
-| Coffee Type        | NVARCHAR(50)   | Coffee type sold (from product dimension). |
-| Roast Type         | NVARCHAR(50)   | Roast type sold (from product dimension). |
-| Size               | NVARCHAR(20)   | Product size sold in the order. |
+| Coffee Type        | NVARCHAR(50)   | Coffee type sold. |
+| Roast Type         | NVARCHAR(50)   | Roast type sold. |
+| Size               | NVARCHAR(20)   | Product size sold. |
 | Coffee Type Name   | NVARCHAR(50)   | Display name for the coffee type. |
 | Roast Type Name    | NVARCHAR(50)   | Display name for the roast type. |
 | Loyalty Card       | BIT            | Indicates whether the purchase was made by a loyalty card holder. |
